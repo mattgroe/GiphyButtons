@@ -11,19 +11,23 @@ var oldtemp = '';
 $(document).on("keyup", "#gif", function (e) {
     if (e.keyCode == 13) {
         buttonAdder(gif.val());
-        console.log(gif.val());
+        $('#gif').val('');
     }
 });
 
 //when the user clicks the search button
 $(document).on("click", "#Search", function (){
     	buttonAdder(gif.val());
-        console.log(gif.val());
+    	$('#gif').val('');
 });
 
 //when a specific button is clicked
 $(document).on('click', '.searches', function() {
 		giphySearch($(this).data('search'));
+		temp = $(this);
+		temp.css('background-color', '#76c325');
+		temp.css('border', '#76c325');
+		temp.css('color', '#26ebe4');
 })
 
 //on click function to pause and play gifs
@@ -89,12 +93,6 @@ function populateGifs(arr, n){
 	}
 }
 
-function buttonColor(this) {
-		newtemp = $(this);
-		temp.css('background-color', 'blue');
-		temp.css('border', 'blue');
-		temp.css('color', 'white');
-}
 
 });
 
