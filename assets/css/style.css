@@ -1,0 +1,79 @@
+
+/*Declaring the rick and morty font*/
+@font-face { font-family: Creator; src: url('rickandmorty.ttf'); } 
+@font-face { font-family: Title; src: url('getschwifty.ttf'); } 
+@font-face { font-family: Adswim; src: url('adultswim.ttf'); } 
+
+
+body {
+	background-image: url('background.png');
+	height: 1080px;
+}
+
+#title-head {
+	padding-top:  60px;
+	padding-bottom: 20px;
+	text-align: center;
+	z-index: 1;
+	background-color: black;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#title-head h1 {
+	font-size: 100px;
+	font-family: Title;
+	/*Nice teal inner color*/
+	color: #26ebe4;
+	/*Nice neonish green outer color*/
+	/*text-shadow: 0px 0px 20px #76c325;*/
+    text-shadow: -3px 0 #76c325, 0 3px #76c325, 3px 0 #76c325, 0 -3px #76c325;
+}
+
+#title-head p {
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: Creator;
+	color: whitesmoke;
+
+}
+
+#main-body {
+	position: static;
+	z-index: 0;
+}
+
+/*Gif pictures*/
+.smallGif {
+	margin-left: 7px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+}
+
+
+.bgGif {
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#inputBar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(200, 200, 200);
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+button {
+	font-family: Adswim;
+	border-radius: 10px;
+}
+
+input {
+	font-family: Adswim;
+	border-radius: 10px;
+}

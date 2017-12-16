@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy Button Maker</title>
+	<!-- Bootstrap -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<!-- JQuery -->
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<!-- CSS -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  	<!-- Javascript -->
+  	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-mg-12" id="title-head">
+				<h1>Rick and Morty</h1>
+				<p>Giphy Buttons</p>
+			</div>
+		</div>
+		<div id="main-body">
+		<!-- Button row -->
+		<div class="row" id="inputBar">
+			<div class="col-md-6" id="buttonSection">
+				<!-- Some starting gif buttons -->
+				<button class="searches" data-search="sad">Sad</button>
+				<button class="searches" data-search="happy">Happy</button>
+				<button class="searches" data-search="dancing">Dancing</button>
+			</div>
+			<div class="col-md-6">
+				<!-- gif button adder -->
+				<input type="text" id="gif" placeholder="Your button here...">
+          		<button id="Search">Add Gif</button>
+			</div>
+		</div>
+		<div class="row bgGif">
+			<div class="col-md-1 bgGif"> </div>
+			<div class="col-md-10" id="popGifs">
+				<!-- Where the gifs will go... -->
+			</div>
+			<div class="col-md-1 bgGif"> </div>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>
